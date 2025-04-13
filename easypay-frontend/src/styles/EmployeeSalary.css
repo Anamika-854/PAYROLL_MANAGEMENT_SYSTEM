@@ -1,0 +1,156 @@
+/* src/styles/EmployeeSalary.css */
+
+.employee-salary-page {
+    padding: 24px;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    font-size: 1.5rem;
+    color: #111827;
+}
+
+.salary-container {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.salary-section {
+    margin-bottom: 32px;
+}
+
+.salary-section h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #111827;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-icon {
+    margin-right: 8px;
+    color: #2563eb;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.salary-card {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.salary-card label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.salary-card p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    margin: 0;
+}
+
+.salary-card.deduction p {
+    color: #dc2626;
+}
+
+.amount {
+    font-family: monospace;
+}
+
+.bank-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.salary-summary {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.summary-card label {
+    display: block;
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.summary-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.summary-card.deduction p {
+    color: #dc2626;
+}
+
+.summary-card.net {
+    background: #2563eb;
+}
+
+.summary-card.net label {
+    color: #e5e7eb;
+}
+
+.summary-card.net p {
+    color: white;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    color: #6b7280;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .salary-summary {
+        grid-template-columns: 1fr;
+    }
+}

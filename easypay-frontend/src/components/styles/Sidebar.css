@@ -1,0 +1,159 @@
+/* src/components/styles/Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #84afe4;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-header h2 {
+  color: #2563eb;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+  
+  .sidebar-nav {
+    flex: 1;
+    padding: 20px 0;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-item:hover {
+    background-color: #2563eb;
+  }
+  
+  .nav-item.active {
+    background-color: #e6f0ff;
+    color: #2563eb;
+  }
+  
+  .nav-icon {
+    margin-right: 12px;
+    font-size: 1.2rem;
+  }
+  
+  .nav-label {
+    font-size: 0.9rem;
+  }
+  
+  .sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .user-role {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+/* Media query for tablet and mobile */
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block;
+  }
+
+  .sidebar {
+      transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+      transform: translateX(0);
+  }
+
+  /* Adjust main content margin */
+  .main-content {
+      margin-left: 0 !important;
+  }
+}
+
+/* For desktop */
+@media (min-width: 769px) {
+  .sidebar {
+      transform: translateX(0) !important;
+  }
+}
+
+/* Add to your existing Sidebar.css */
+.logout-btn {
+  margin-top: auto;
+  color: #ef4444;
+  margin-bottom: -10px;
+}
+
+.logout-btn:hover {
+  background-color: #fee2e2;
+}
+
+/* If you want to push the logout button to the bottom of the sidebar nav */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px); /* Adjust based on your header and footer heights */
+}

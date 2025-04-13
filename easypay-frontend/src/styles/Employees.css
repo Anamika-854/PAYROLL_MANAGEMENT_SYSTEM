@@ -1,0 +1,245 @@
+/* src/styles/Employees.css */
+
+.employees-page {
+    padding: 20px;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .page-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .btn-add {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .search-filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+  }
+  
+  .btn-filter {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .employees-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  th {
+    background-color: #f9fafb;
+    font-weight: 600;
+  }
+  
+  .status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .status.active {
+    background-color: #dcfce7;
+    color: #15803d;
+  }
+  
+  .status.inactive {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .btn-edit, .btn-delete {
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-edit {
+    background-color: #e6f0ff;
+    color: #2563eb;
+  }
+  
+  .btn-delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  @media (max-width: 768px) {
+    .search-filter-bar {
+      flex-direction: column;
+    }
+    
+    .employees-table {
+      font-size: 14px;
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .warning-icon {
+    color: #f59e0b;
+    font-size: 24px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    color: #111827;
+  }
+  
+  .modal-content p {
+    margin-bottom: 20px;
+    color: #4b5563;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d1d5db;
+  }
+  
+  .btn-danger:hover {
+    background-color: #dc2626;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #ef4444;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.status.active {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status.inactive {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
