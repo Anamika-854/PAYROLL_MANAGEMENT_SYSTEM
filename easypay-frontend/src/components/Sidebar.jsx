@@ -61,7 +61,7 @@ const Sidebar = () => {
 
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
-          <h2>EasyPay</h2>
+          <h2>Payroll</h2>
         </div>
 
         <nav className="sidebar-nav">

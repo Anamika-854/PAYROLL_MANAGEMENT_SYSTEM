@@ -42,8 +42,8 @@ const Login = () => {
         <div className="login-container">
             <div className="login-box">
                 <div className="login-header">
-                    <h1>EasyPay</h1>
-                    <p>Welcome back! Please login to your account.</p>
+                    <h1>Payroll</h1>
+                    <p>login</p>
                 </div>
 
                 {error && (

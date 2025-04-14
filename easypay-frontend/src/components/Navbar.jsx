@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <h1>EasyPay</h1>
+                <h4>Dashboard</h4>
             </div>
             
             <div className="navbar-menu">

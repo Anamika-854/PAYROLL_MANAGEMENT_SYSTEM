@@ -61,7 +61,7 @@ const Dashboard = () => {
       fetchDashboardData();
   }, [userRole, employeeId]);
 
-  if (loading) return <div className="loading">Loading...</div>;
+  if (loading) return <div className="loading">Loading.....</div>;
   if (error) return <div className="error-message">{error}</div>;
 
   return (
